@@ -1,0 +1,87 @@
+table, .test, .report, .results{
+  width: 50%;
+  min-width: 600px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+th{
+  color: #6e9cf7;
+}
+td, th{
+  padding: .1%;
+  height: 35px;
+  border-bottom: 2px solid rgb(193, 192, 192);
+  text-align: center;
+}
+.report{
+  background-color: #f6c1c1;
+}
+h3{
+  padding-top: 10px;
+}
+.test{
+  margin-bottom: 10vh;
+}
+.progress-bar {
+  height: 10px;
+  background-color: #6e9cf7;
+  transition: width 0.2s ease-in-out;
+  border-radius: 5px;
+}
+.progress-bar-full {
+  width: 100%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.results{
+  background-color: #f2f2f2;
+}
+.upload-area{
+  background-color: #B2DEF9;
+  padding-left: 2%;
+}
+.wrong-format{
+  padding-left: 2%;
+}
+
+#app{
+  margin: 2%;
+}
+.alert, .bn, .an, .report {
+  color: tomato;
+}
+.n, .congrats {
+  color: green;
+}
+.nenorm{
+  font-weight: bold;
+}
+.transparent{
+  color: #e5e7eb;
+}
+.swal2-validation-message{
+  text-align: center;
+}
+.img-box img{
+  width: 80%;
+  margin-top: 5%;
+}
+.upload-area, .img-box, .wrong-format{
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 400px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.upload, .labs {
+  margin-left: 2vw;
+}
+.img-box{
+  text-align: center;
+}
+.upload-area input[type="file"] {
+  font-size: 0;
+}
