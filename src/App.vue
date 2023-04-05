@@ -39,10 +39,10 @@
 
 
 
-  import * as pdfjsLib from 'pdfjs-dist';
-  const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
+  // import * as pdfjsLib from 'pdfjs-dist';
+  // const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
 
-  // import pdfjsWorker from './pdfjs-dist/build/pdf.worker.entry';
+  import pdfjsWorker from './pdfjs-dist/build/pdf.worker.entry';
 
 
 
