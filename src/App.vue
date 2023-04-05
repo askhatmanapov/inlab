@@ -30,6 +30,15 @@
   </div>
 </template>
 <script>
+
+const pdfjsWorker = await new Promise(resolve => {
+  import('pdfjs-dist/build/pdf.worker.entry').then(module => {
+    resolve(module.default)
+  })
+})
+
+
+
   import * as pdfjsLib from 'pdfjs-dist';
   import Olymp from './components/Olymp.vue'
   import Invivo from './components/Invivo.vue'
@@ -37,7 +46,7 @@
   import UMC from './components/UMC.vue'
   import Manual from './components/Manual.vue'
   import { ref } from 'vue';
-  const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
+  // const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
   export default {
     components: {
       Olymp,
