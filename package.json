@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "pdfjs-dist": "^3.5.141",
+    "sweetalert2": "^11.7.3",
     "vue": "^3.2.47"
   },
   "devDependencies": {
