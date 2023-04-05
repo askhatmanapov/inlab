@@ -16,7 +16,7 @@ export default defineConfig({
     rollupOptions: {
       external: ['pdfjs-dist/build/pdf.worker.entry']
     },
-    target: 'es2018'
+    target: 'node14'
   },
   css: {
     postcss: {
