@@ -13,9 +13,6 @@ export default defineConfig({
     }
   },
   build: {
-    rollupOptions: {
-      external: ['pdfjs-dist/build/pdf.worker.entry']
-    },
     target: 'esnext'
   },
   css: {
