@@ -30,14 +30,22 @@
   </div>
 </template>
 <script>
-  import * as pdfjsLib from 'pdfjs-dist';
   import Olymp from './components/Olymp.vue'
   import Invivo from './components/Invivo.vue'
   import Sapa from './components/Sapa.vue'
   import UMC from './components/UMC.vue'
   import Manual from './components/Manual.vue'
   import { ref } from 'vue';
-  const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
+
+
+
+  // import * as pdfjsLib from 'pdfjs-dist';
+  // const pdfjsWorker = await import('/pdfjs-dist/build/pdf.worker.entry');
+
+  import pdfjsWorker from './pdfjs-dist/build/pdf.worker.entry';
+
+
+
   export default {
     components: {
       Olymp,
