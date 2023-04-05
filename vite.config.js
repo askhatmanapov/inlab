@@ -13,7 +13,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['pdfjs-dist']
+      external: ['pdfjs-dist/build/pdf.worker.entry']
     }
   }
 })
