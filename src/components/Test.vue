@@ -13,7 +13,7 @@
         <div v-if="error_message" class="error" style="color: tomato;">{{ error_message }}</div>
     </div>
     <div class="results" v-if="show_results">
-        <h3>Рекомендация специалистов:</h3>
+        <h2>Рекомендация специалистов:</h2>
         <ul v-for="item in [...new Set(current_specialists)]">{{item}}</ul>
         <p>Полученное заключение не является официальным диагнозом, для уточнения вашего состояния обратитесь к рекомендованным выше специалистам</p>
     </div>

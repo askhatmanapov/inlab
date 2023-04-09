@@ -18,7 +18,7 @@
   </div>
   <div v-if="check === 1" class="labs">
       <!-- <p>{{ extractedText }}</p> -->
-      <h3>{{ lab }}</h3>
+      <h3 style="color: #6e9cf7;">{{ lab }}</h3>
       <p>{{ name }} {{ age }}</p>
       <olymp v-if="lab === 'Olymp'" :extractedText="extractedText"></olymp>
       <invivo v-if="lab === 'Invivo'" :extractedText="extractedText"></invivo>

@@ -15,6 +15,9 @@ table, .test, .report, .survey{
   width: 60%;
   min-width: 600px;
 }
+table{
+  border-collapse: collapse;
+}
 th{
   color: #6e9cf7;
 }
@@ -73,7 +76,10 @@ td, th{
 .labs{
   padding-left: 2vw;
 }
-
+caption{
+  font-weight: bold;
+  font-size: 20px;
+}
 
 .initial-report{
   background-color: #facbcb;
@@ -86,20 +92,20 @@ td, th{
 .initial-report h2, .initial-report h4, .initial-report p{
   margin: 2%;
 }
-.recommendation, .supplementary, .results{
+.recommendation, .supplementary, .results, .abnormal{
   background-color: #e5e7eb;
   border-radius: 10px;
   padding: 1%;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
-.secondry-report h2, .secondry-report h4, .secondry-report p{
+.secondry-report h2, .secondry-report h4, .secondry-report p, .results h2, .results p, .abnormal h3{
   margin: 2%;
 }
 .secondry-report p, .results p{
   color: gray;
   font-size: 14px;
 }
-.secondry-report ul, .results ul{
+.secondry-report ul, .results ul, .abnormal ul{
   font-size: 18px;
 }

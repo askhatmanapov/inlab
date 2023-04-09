@@ -1,7 +1,7 @@
-<template> <!--Olymp-->
+<template>
     <div class="pdf">
         <table v-if="analyse">
-            <caption> Анализ крови (содержание гормонов и медиаторов)</caption>
+            <caption>Анализ крови (содержание гормонов и медиаторов)</caption>
             <tbody>
                 <tr>
                     <th>Компонент</th>
@@ -84,14 +84,14 @@
             </tbody>
         </table>
     </div>
-    
+
     <div class="report">
         <Report :report="report" :show_results="show_results"></Report>
-    </div>
-
-    <div v-if="report[7]">
-        <p>(!) Следующие параметры не учитывались при интерпретации, так как не относятся к гормонам щитовидной железы:</p>
-        <p v-for="item in abnormal" style="font-weight: bold;"> {{ item }}</p>
+        
+        <div v-if="report[7]" class="abnormal">
+            <h3>(!) Следующие параметры не учитывались при интерпретации, так как не относятся к гормонам щитовидной железы:</h3>
+            <ul v-for="item in abnormal">{{ item }}</ul>
+        </div>
     </div>
 
     <div class="congrats">
