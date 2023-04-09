@@ -84,53 +84,12 @@
             </tbody>
         </table>
     </div>
+    
     <div class="report">
-        <div v-if="report[0]">
-            <h3 style="padding-top: 5px;">У Вас выявлены подозрения на Первичный гипотериоз</h3>
-            <h4 style="color: tomato;">Проконсультируйтесь с рекомендованными специалистами предварительно сдав необходимые анализы.</h4>
-            <p v-if="!show_results">Ответьте на следующие вопросы чтобы узнать к каким специалистам обратиться! Займет не более 2-х минут.</p>
-            <h4 v-if="show_results" style="color: lightcoral;">РЕКОМЕНДУЕМЫЕ АНАЛИЗЫ</h4>
-            <p v-if="show_results" style="color: lightcoral;">УЗИ щитовидной железы,  ЭКГ, ЭхоКГ</p>
-            <h4 v-if="show_results" style="color: lightcoral;">Дополнительные анализы:</h4>
-            <p v-if="show_results" style="color: lightcoral;">ОАК, ЛПНП</p>
-        </div>
-        <div v-if="report[1]">
-            <h3>У Вас выявлены подозрения на Субклинический гипотериоз</h3>
-            <h4 style="color: tomato;">Проконсультируйтесь с рекомендованными специалистами предварительно сдав необходимые анализы.</h4>
-            <p v-if="!show_results">Ответьте на следующие вопросы чтобы узнать к каким специалистам обратиться! Займет не более 2-х минут.</p>
-            <h4 v-if="show_results" style="color: lightcoral;">РЕКОМЕНДУЕМЫЕ АНАЛИЗЫ</h4>
-            <p v-if="show_results" style="color: lightcoral;">УЗИ щитовидной железы</p>
-            <h4 v-if="show_results" style="color: lightcoral;">Дополнительные анализы:</h4>
-            <p v-if="show_results" style="color: lightcoral;">ОАК</p>
-        </div>
-        <div v-if="report[2]">
-            <h3>У Вас выявлены подозрения на Центральный гипотериоз</h3>
-            <h4 style="color: tomato;">Проконсультируйтесь с рекомендованными специалистами предварительно сдав необходимые анализы.</h4>
-            <p v-if="!show_results">Ответьте на следующие вопросы чтобы узнать к каким специалистам обратиться! Займет не более 2-х минут.</p>
-            <h4 v-if="show_results" style="color: lightcoral;">РЕКОМЕНДУЕМЫЕ АНАЛИЗЫ</h4>
-            <p v-if="show_results" style="color: lightcoral;">УЗИ щитовидной железы,  ЭКГ, ЭхоКГ, МРТ/КТ гипофеза головного мозга с контрастированием</p>
-            <h4 v-if="show_results" style="color: lightcoral;">Дополнительные анализы:</h4>
-            <p v-if="show_results" style="color: lightcoral;">ОАК, ЛПНП</p>
-        </div>
-        <div v-if="report[3]">
-            <h3>Необходима консультация нейрохирурга</h3>
-            <h4 style="color: tomato;">Проконсультируйтесь с рекомендованными специалистами предварительно сдав необходимые анализы.</h4>
-            <p v-if="show_results">Ответьте на следующие вопросы чтобы узнать к каким специалистам обратиться! Займет не более 2-х минут.</p>
-            <h4 v-if="show_results" style="color: lightcoral;">РЕКОМЕНДУЕМЫЕ АНАЛИЗЫ</h4>
-            <p v-if="show_results" style="color: lightcoral;">МРТ/КТ гипофеза головного мозга с контрастированием</p>
-        </div>
-        <div v-if="report[4]">
-            <h3>Возможна погрешность анализов</h3>
-            <p>Необходимо повторно сдать анализ гормонов щитовидной железы</p>
-        </div>
-        <div v-if="report[5]">
-            <h3>Ошибка считывания</h3>
-            <p>Разбор вашего анализа недоступен в базе, просим извинения</p>
-        </div>
+        <Report :report="report" :show_results="show_results"></Report>
     </div>
+
     <div v-if="report[7]">
-            <!-- <h3>Error</h3>
-            <span style="color: red;">(!)</span> -->
         <p>(!) Следующие параметры не учитывались при интерпретации, так как не относятся к гормонам щитовидной железы:</p>
         <p v-for="item in abnormal" style="font-weight: bold;"> {{ item }}</p>
     </div>
@@ -153,9 +112,11 @@
     import Swal from 'sweetalert2';
     import { ref } from 'vue';
     import Test from './Test.vue'
+    import Report from './Report.vue'
     export default {
         components: {
-            Test
+            Test,
+            Report
         },
         props: ['extractedText'],
         data(){
