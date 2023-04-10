@@ -6,6 +6,7 @@
       <input type="file" @change="handleFileSelect">
     </div>
     <div v-if="check === 1" class="wrong-format">
+      <!-- <p>{{ extractedText }}</p> -->
       <div v-if="!lab">
         <h3 style="color: red">Неправильный формат</h3>
         <p>Пожалуйста, загрузите правильный формат анализа. Или, можете вручную заполнить таблицу</p>
@@ -22,6 +23,7 @@
       <p>{{ name }} {{ age }}</p>
       <olymp v-if="lab === 'Olymp'" :extractedText="extractedText"></olymp>
       <invivo v-if="lab === 'Invivo'" :extractedText="extractedText"></invivo>
+      <invitro v-if="lab === 'Invitro'" :extractedText="extractedText"></invitro>
       <sapa v-if="lab === 'Sapa'" :extractedText="extractedText"></sapa>
       <UMC v-if="lab === 'UMC'" :extractedText="extractedText"></UMC>
     </div>
@@ -32,24 +34,19 @@
 <script>
   import Olymp from './components/Olymp.vue'
   import Invivo from './components/Invivo.vue'
+  import Invitro from './components/Invitro.vue'
   import Sapa from './components/Sapa.vue'
   import UMC from './components/UMC.vue'
   import Manual from './components/Manual.vue'
   import { ref } from 'vue';
-
-
-
   import * as pdfjsLib from 'pdfjs-dist';
   const pdfjsWorker = await import('pdfjs-dist/build/pdf.worker.entry');
-
-  // import pdfjsWorker from './pdfjs-dist/build/pdf.worker.entry';
-
-
 
   export default {
     components: {
       Olymp,
       Invivo,
+      Invitro,
       Sapa,
       UMC,
       Manual
@@ -150,6 +147,43 @@
                 while (this.extractedText[agef + 1] != " ") {
                   this.age = this.age + this.extractedText[agef + 1]
                   agef++
+                }
+              }
+
+
+              if(this.extractedText.indexOf('invitro.kz')>0) {
+                this.lab = 'Invitro'
+
+                let namei = this.extractedText.indexOf('тестирования') 
+                while (this.extractedText[namei] != " ") {
+                  namei++
+                }
+                let namef = namei + 2
+                while (this.extractedText[namef] != " ") {
+                  namef++
+                }
+                while (this.extractedText[namef + 1] != " ") {
+                  namef++
+                }
+                while (namei<namef + 1){
+                  this.name = this.name + this.extractedText[namei]
+                  namei++
+                }
+
+                let agei = this.extractedText.indexOf('(Возраст):') 
+                while (this.extractedText[agei] != " ") {
+                  agei++
+                }
+                let agef = agei + 3
+                while (this.extractedText[agef] != " ") {
+                  agef++
+                }
+                while (this.extractedText[agef + 1] != " ") {
+                  agef++
+                }
+                while (agei<agef + 1){
+                  this.age = this.age + this.extractedText[agei]
+                  agei++
                 }
               }
 

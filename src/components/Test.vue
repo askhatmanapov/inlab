@@ -78,117 +78,117 @@
                 { title: 'Нет', specialists: [] },
             ],
         },
-        // {
-        //     id: 3,
-        //     title: 'Бессоница',
-        //     answers: [
-        //         { title: 'Да', specialists: [specialists[3]] },
-        //         { title: 'Нет', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 4,
-        //     title: 'Зябкость',
-        //     answers: [
-        //         { title: 'Утром', specialists: [specialists[2]] },
-        //         { title: 'Вечером', specialists: [specialists[1]] },
-        //         { title: 'Постоянно', specialists: [specialists[1]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 5,
-        //     title: 'Вялость',
-        //     answers: [
-        //         { title: 'Утром', specialists: [specialists[2]] },
-        //         { title: 'Вечером', specialists: [specialists[1]] },
-        //         { title: 'Постоянно', specialists: [specialists[3]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 6,
-        //     title: 'Сонливость',
-        //     answers: [
-        //         { title: 'Утром', specialists: [specialists[2]] },
-        //         { title: 'Вечером', specialists: [specialists[3]] },
-        //         { title: 'Постоянно', specialists: [specialists[2]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 7,
-        //     title: 'Прибавка массы тела',
-        //     answers: [
-        //         { title: 'Плотные отеки по всему телу утром', specialists: [specialists[1], specialists[2]] },
-        //         { title: 'Плотные отеки по всему телу вечером', specialists: [specialists[1]] },
-        //         { title: 'Отеков нет', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 8,
-        //     title: 'Онимение пальцев',
-        //     answers: [
-        //         { title: 'Связанно со стресом', specialists: [specialists[3]] },
-        //         { title: 'Независимо от стреса', specialists: [specialists[2]] },
-        //         { title: 'Онимения нет', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 9,
-        //     title: 'Запоры',
-        //     answers: [
-        //         { title: 'Постоянно', specialists: [specialists[2]] },
-        //         { title: 'С приемом пищи', specialists: [specialists[4]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 10,
-        //     title: 'Выпадение волос',
-        //     answers: [
-        //         { title: 'Постоянно', specialists: [specialists[2]] },
-        //         { title: 'С приемом препаратов', specialists: [specialists[5]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 11,
-        //     title: 'Чувство боли в сердце',
-        //     answers: [
-        //         { title: 'Учащение ритма', specialists: [specialists[1]] },
-        //         { title: 'Замедление ритма', specialists: [specialists[2]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 12,
-        //     title: 'Судороги',
-        //     answers: [
-        //         { title: 'Мышечные', specialists: [specialists[2]] },
-        //         { title: 'Эпилептические', specialists: [specialists[3]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 13,
-        //     title: 'Нарушение менструального цикла',
-        //     answers: [
-        //         { title: 'С приемом препаратов', specialists: [specialists[6]] },
-        //         { title: 'Не связаны с возрастом', specialists: [specialists[2]] },
-        //         { title: 'Переодически', specialists: [specialists[6]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
-        // {
-        //     id: 14,
-        //     title: 'Кожа и кожанные покровы',
-        //     answers: [
-        //         { title: 'Сухая', specialists: [specialists[2]] },
-        //         { title: 'Влажная', specialists: [specialists[3]] },
-        //         { title: 'Не характерно', specialists: [] },
-        //     ],
-        // },
+        {
+            id: 3,
+            title: 'Бессоница',
+            answers: [
+                { title: 'Да', specialists: [specialists[3]] },
+                { title: 'Нет', specialists: [] },
+            ],
+        },
+        {
+            id: 4,
+            title: 'Зябкость',
+            answers: [
+                { title: 'Утром', specialists: [specialists[2]] },
+                { title: 'Вечером', specialists: [specialists[1]] },
+                { title: 'Постоянно', specialists: [specialists[1]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
+        {
+            id: 5,
+            title: 'Вялость',
+            answers: [
+                { title: 'Утром', specialists: [specialists[2]] },
+                { title: 'Вечером', specialists: [specialists[1]] },
+                { title: 'Постоянно', specialists: [specialists[3]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
+        {
+            id: 6,
+            title: 'Сонливость',
+            answers: [
+                { title: 'Утром', specialists: [specialists[2]] },
+                { title: 'Вечером', specialists: [specialists[3]] },
+                { title: 'Постоянно', specialists: [specialists[2]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
+        {
+            id: 7,
+            title: 'Прибавка массы тела',
+            answers: [
+                { title: 'Плотные отеки по всему телу утром', specialists: [specialists[1], specialists[2]] },
+                { title: 'Плотные отеки по всему телу вечером', specialists: [specialists[1]] },
+                { title: 'Отеков нет', specialists: [] },
+            ],
+        },
+        {
+            id: 8,
+            title: 'Онимение пальцев',
+            answers: [
+                { title: 'Связанно со стресом', specialists: [specialists[3]] },
+                { title: 'Независимо от стреса', specialists: [specialists[2]] },
+                { title: 'Онимения нет', specialists: [] },
+            ],
+        },
+        {
+            id: 9,
+            title: 'Запоры',
+            answers: [
+                { title: 'Постоянно', specialists: [specialists[2]] },
+                { title: 'С приемом пищи', specialists: [specialists[4]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
+        {
+            id: 10,
+            title: 'Выпадение волос',
+            answers: [
+                { title: 'Постоянно', specialists: [specialists[2]] },
+                { title: 'С приемом препаратов', specialists: [specialists[5]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
+        {
+            id: 11,
+            title: 'Чувство боли в сердце',
+            answers: [
+                { title: 'Учащение ритма', specialists: [specialists[1]] },
+                { title: 'Замедление ритма', specialists: [specialists[2]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
+        {
+            id: 12,
+            title: 'Судороги',
+            answers: [
+                { title: 'Мышечные', specialists: [specialists[2]] },
+                { title: 'Эпилептические', specialists: [specialists[3]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
+        {
+            id: 13,
+            title: 'Нарушение менструального цикла',
+            answers: [
+                { title: 'С приемом препаратов', specialists: [specialists[6]] },
+                { title: 'Не связаны с возрастом', specialists: [specialists[2]] },
+                { title: 'Переодически', specialists: [specialists[6]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
+        {
+            id: 14,
+            title: 'Кожа и кожанные покровы',
+            answers: [
+                { title: 'Сухая', specialists: [specialists[2]] },
+                { title: 'Влажная', specialists: [specialists[3]] },
+                { title: 'Не характерно', specialists: [] },
+            ],
+        },
     ]
 
     const progress = computed(() => {
