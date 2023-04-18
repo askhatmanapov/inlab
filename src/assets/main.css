@@ -27,10 +27,6 @@ td, th{
   border-bottom: 2px solid rgb(193, 192, 192);
   text-align: center;
 }
-.upload-area input[type="file"] {
-  /* font-size: 0; */
-  color: black;
-}
 .upload-area, .wrong-format{
   background-color: #B2DEF9;
   padding-left: 2%;

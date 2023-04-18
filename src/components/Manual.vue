@@ -1,6 +1,6 @@
 <template>
     <div class="manual">
-        <table>
+        <table style="margin-bottom: 10px;">
             <caption>Анализ крови (содержание гормонов и медиаторов)</caption>
             <tbody>
                 <tr>
@@ -173,7 +173,7 @@
         <test @show_results="passdata" :report="report[3]"></test>
     </div>
     
-    <div v-if="report[4] || report[5] || report == '' || report[6]">
+    <div v-if="report[4] || report[5] || report == '' || report[6]"> <!-- style="margin-top: 10px;" -->
         <button type="button" @click="reloadPage">Пройти заново</button>
     </div>
 </template>
