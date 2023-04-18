@@ -29,6 +29,7 @@ td, th{
 }
 .upload-area input[type="file"] {
   /* font-size: 0; */
+  color: black;
 }
 .upload-area, .wrong-format{
   background-color: #B2DEF9;
