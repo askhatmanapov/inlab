@@ -72,7 +72,7 @@
         },
         {
             id: 2,
-            title: 'Депресия',
+            title: 'Депрессия',
             answers: [
                 { title: 'Да', specialists: [specialists[2]] },
                 { title: 'Нет', specialists: [] },
@@ -80,7 +80,7 @@
         },
         {
             id: 3,
-            title: 'Бессоница',
+            title: 'Бессонница',
             answers: [
                 { title: 'Да', specialists: [specialists[3]] },
                 { title: 'Нет', specialists: [] },
@@ -127,10 +127,10 @@
         },
         {
             id: 8,
-            title: 'Онимение пальцев',
+            title: 'Онемение пальцев',
             answers: [
-                { title: 'Связанно со стресом', specialists: [specialists[3]] },
-                { title: 'Независимо от стреса', specialists: [specialists[2]] },
+                { title: 'Связанно со стрессом', specialists: [specialists[3]] },
+                { title: 'Независимо от стресса', specialists: [specialists[2]] },
                 { title: 'Онимения нет', specialists: [] },
             ],
         },
@@ -182,7 +182,7 @@
         },
         {
             id: 14,
-            title: 'Кожа и кожанные покровы',
+            title: 'Кожа и кожные покровы',
             answers: [
                 { title: 'Сухая', specialists: [specialists[2]] },
                 { title: 'Влажная', specialists: [specialists[3]] },
