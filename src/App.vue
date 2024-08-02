@@ -17,7 +17,7 @@
       <img src="/src/assets/img1.png" alt=""/>
     </div>
     <div class="video-box">
-      <iframe src="src/assets/vid1.MOV"></iframe>
+      <iframe src="src/assets/vid1.MP4"></iframe>
     </div>
   </div>
   <div v-if="check === 1" class="labs">
