@@ -17,7 +17,10 @@
       <img src="/src/assets/img1.png" alt=""/>
     </div>
     <div class="video-box">
-      <iframe src="/src/assets/vid1.MP4"></iframe>
+      <video controls>
+        <source :src="require('@/assets/vid1.MP4')" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
   <div v-if="check === 1" class="labs">
