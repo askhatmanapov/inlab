@@ -19,7 +19,7 @@
     <div class="video-box">
       <video controls>
         <!-- <source :src="require('@/assets/vid1.MP4')" type="video/mp4"> -->
-        <source src="/vid1.mp4" type="video/mp4">
+        <source src="/vid1.mp4" type="video/mp4"/>
         Your browser does not support the video tag.
       </video>
     </div>
