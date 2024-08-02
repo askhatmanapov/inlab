@@ -2,7 +2,7 @@
   <div class="upload" v-if="!check || !lab">
     <div v-if="!check" class="upload-area">
       <h3>Здравствуйте!</h3>
-      <p>Просим вас загрузить анализы!</p>
+      <p>Просим вас загрузить анализы Тест!</p>
       <input type="file" @change="handleFileSelect">
     </div>
     <div v-if="check === 1" class="wrong-format">
